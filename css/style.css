@@ -1,3 +1,178 @@
+/* Estilos especiales para la sección de Asociación */
+.about_text {
+    font-size: 48px !important;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.about_text:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #df9911;
+    transition: width 0.3s ease;
+}
+
+.about_text:hover:after {
+    width: 150px;
+}
+
+.about_section_2 {
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.ipsum_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image_3 {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.image_3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.image_3 img {
+    transition: all 0.5s ease;
+}
+
+.image_3:hover img {
+    transform: scale(1.1);
+}
+
+.image_3,
+    image_5 {
+    margin-bottom: 80px;
+}
+
+
+
+.image_5 {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.image_5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.image_5 img {
+    transition: all 0.5s ease;
+}
+
+.image_5:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.gallery_section {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.gallery_text {
+    font-size: 36px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.gallery_text:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #df9911;
+}
+
+.gallery_box {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.gallery_box:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.gallery_box:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.gallery_img {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.gallery_img img {
+    transition: all 0.5s ease;
+}
+
+.gallery_box:hover .gallery_img img {
+    transform: scale(1.1);
+}
+
+.types_text {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.gallery_box:hover .types_text {
+    color: #df9911;
+}
+
+
 /* Línea del tiempo vertical */
 .timeline-section {
     background: #f8f9fa;
